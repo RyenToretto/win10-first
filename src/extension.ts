@@ -16,8 +16,17 @@ export function activate(context: vscode.ExtensionContext) {
         // 向用户显示一个消息框
         vscode.window.showInformationMessage('Hello World from win10-first!');
     });
-
     context.subscriptions.push(disposable);
+
+    /**** 命令注册 ****/
+    let kjfLove = vscode.commands.registerCommand('win10-first.kjfLove', () => {
+        // 每次执行 win10-first.kjfLove 命令时都会执行您放置在此处的代码
+        // 向用户显示一个消息框
+        vscode.window.showInformationMessage('kjf Love wy!');
+        console.log('每次执行 win10-first.kjfLove 命令时都会执行您放置在此处的代码');
+    });
+    context.subscriptions.push(kjfLove);
+    /************/
 }
 
 // 停用您的插件程序时，将调用此方法
