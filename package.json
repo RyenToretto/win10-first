@@ -39,6 +39,11 @@
 					"when": "editorFocus",
 					"command": "win10-first.kjfLove",
 					"group": "navigatioin"
+				},
+				{
+					"when": "editorFocus && resourceLangId == javascript",
+					"command": "win10-first.helloWorld",
+					"group": "z_commands"
 				}
 			]
 		}
