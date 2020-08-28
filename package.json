@@ -24,7 +24,24 @@
 				"command": "win10-first.kjfLove",
 				"title": "kjfLove"
 			}
-		]
+		],
+		"keybindings": [
+			{
+				"command": "win10-first.kjfLove",
+				"key": "ctrl+alt+1",
+				"mac": "cmd+1",
+				"when": "editorTextFocus"
+			}
+		],
+		"menus": {
+			"editor/context": [
+				{
+					"when": "editorFocus",
+					"command": "win10-first.kjfLove",
+					"group": "navigatioin"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
